@@ -35,8 +35,6 @@ class StdoutCapture(object):
         stream.write(self.tmp_file.read())
         res = stream.getvalue().decode('utf-8')
 
-        print(res, file=sys.stderr)
-
         return str.splitlines(res)
 
     def close(self):

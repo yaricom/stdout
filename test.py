@@ -40,7 +40,7 @@ class StdoutCaptureTest(unittest.TestCase):
 
         stdout_capture = StdoutCapture()
 
-        os.system("echo %s >&2" % c_msg)
+        os.system("echo %s >&1" % c_msg)
 
         stdout_capture.close()
 
